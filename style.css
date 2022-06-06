@@ -2,9 +2,7 @@
 body{
     margin:0;
     padding: 0;
-    background-color: rgb(239, 245, 243);
-    
-    
+    background-color: rgb(239, 245, 243);   
 }
 header{
    width: 100%;
@@ -71,9 +69,6 @@ a{
 #logo{
     margin-left: 30px;
 }
-
-
-
 .sub-menu li {
     width: 200Px;
     font-size: 14px;
@@ -216,14 +211,18 @@ h1 {
 }
 /*--------------about me---------------*/
 #about-me{
-    height:90%;
-    width: 80%; 
+    height:100%;
+    width: 90%; 
     box-shadow: 3px 3px 3px gray;
     display: flex;
     justify-content: space-between;
     padding: 50px 70px;
     flex-wrap: wrap;
     background-color: white;
+}
+.aboutInner
+{
+    width: 500px
 }
 h2{
     color: rgb(81, 153, 129);
@@ -340,7 +339,7 @@ ol{
 }
 
 /*-----------------Optics------------------*/
-.opticContainer{
+.container{
     width: 90%;
 }
 .opticContainer >p{
