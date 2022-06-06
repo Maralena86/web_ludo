@@ -95,6 +95,13 @@ h1{
     margin-left: 30px;  
     color: #884852;   
 }
+.imagesBottom>img{
+    margin-bottom: 20px;
+}
+video{
+    background-color: black;
+    
+}
 /*-------*/
 #name{
     color: white;
@@ -184,7 +191,7 @@ h1 {
 }
 h2{
     color: rgb(81, 153, 129);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
 }
 p{
@@ -481,6 +488,9 @@ figcaption{
     margin-bottom: 30px;
 }
 @media screen and (max-width:  1200px){
+    #logo>img{
+      height: 40px;
+    }
     .menu > li{
         font-size: 10px;
         width: 90px;  
@@ -491,6 +501,7 @@ figcaption{
     }
     h1{
         font-size: 25px;
+        margin-bottom: 10px;
     }
     /*-------optics---------*/
     #career>img, #imgcareer{
@@ -503,15 +514,21 @@ figcaption{
     .titleAlign>h3{
         font-size:20px ;
     }
+   
     .erase{
         display: none;
     }
     .titleOptics >img{
         height: 50px;
     }
-    #imgContainerColor >img, #biphotonSplitter{
-        width: 90%;
+    .large{
+        width: 100%;
         height: auto;
     }
-
+    iframe{
+        height: auto;
+    }
+    video, iframe{
+        margin-bottom: 20px;
+    }
 }
