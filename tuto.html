@@ -18,28 +18,33 @@
           </ul>
         </nav>
     </header>
-<div class="flexCol first">
-    <h1>Videos</h1>
-    <div class="flex">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vnF_R0xWvMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SBP1cEzaWwY?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <video src="video/preparation-sample.mp4" controls autoplay height="300px"></video>
+    <section>
+ <div class="containerArticle first">
+    <h1>MEDIAS</h1>
+    <div class="flexCol article ">
+        <h2>Videos</h2>
+        <div>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/vnF_R0xWvMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/SBP1cEzaWwY?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video src="video/preparation-sample.mp4" controls autoplay muted width="400" height="300px"></video>
+        </div>
     </div>
-    <h1>Posters</h1>
+    <div class="flexCol article ">   
+    <h2>Posters</h2>
     <p></p>
-    <div class="flex" >
-    <div>
-        <img src="imgs/fablab/poster_lattice.png" style="height: 400px;cursor:pointer"
-        onclick="openModal();currentDiv(1)" >
-    </div>
-    <div >
-        <img src="imgs/fablab/poster_imageIT.png" style="height: 400px;cursor:pointer"
-        onclick="openModal();currentDiv(2)">
-    </div>
-    <div>
-        <img src="imgs/fablab/poster3d.png" style="height: 400px;cursor:pointer"
-        onclick="openModal();currentDiv(3)">
-    </div>
+    <div class="flex containerArticle" >
+        <div>
+            <img src="imgs/fablab/poster_lattice.png" style="height: 400px;cursor:pointer"
+            onclick="openModal();currentDiv(1)" >
+        </div>
+        <div >
+            <img src="imgs/fablab/poster_imageIT.png" style="height: 400px;cursor:pointer"
+            onclick="openModal();currentDiv(2)">
+        </div>
+        <div>
+            <img src="imgs/fablab/poster3d.png" style="height: 400px;cursor:pointer"
+            onclick="openModal();currentDiv(3)">
+        </div>
     </div>
 
     <div id="myModal" class="modal ">
@@ -72,6 +77,7 @@
     </div> <!-- End modal -->
 
     </div>
+</section>
 
 <script src="script.js">
 
