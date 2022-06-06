@@ -1,45 +1,47 @@
 body{
-    	margin:0;
-    	padding: 0;
-    	background-color: rgb(239, 245, 243);   
+    margin:0;
+    padding: 0;
+    background-color: rgb(239, 245, 243);   
 }
 header{
-	width: 100%;
-    	color: white;
-    	background-color: black;
-    	display: flex;
-    	justify-content: space-between;
-    	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    	font-weight: bold;
-   	font-size: 18px;
+   width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;	
 	min-width: 500px;
-    	height: 70px;
+    height: 70px;	
 	position: fixed;
 	z-index: 1;
 }
+
 .menu {
-	display: inline-block; 
-    	margin-bottom: 0px;
-    	width: 100%;
-}
-.menu > li {
-	float: left;
-	width: 130px;
-	height: 50px;
-	line-height: 40px;
-	background: rgba(0, 0, 0);
-	cursor: pointer;
-	font-size: 17px;
-	text-align: center;
-}
+    display: inline-block; 
+    margin-bottom: 0px;
+    width: 100%;
+    
+  }
+  .menu > li {
+    float: left;
+    width: 130px;
+    height: 50px;
+    line-height: 40px;
+    background: rgba(0, 0, 0);
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+  }
   .menu > li >a{
       color: white;
   }
 ul{
-	list-style-type: none;
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 header ul li
@@ -47,7 +49,8 @@ header ul li
 	display: inline;
 	padding: 10px 20px;
 }
-header ul li a:hover{   
+header ul li a:hover{
+    
     transform: scale(1.1);
     font-size: 18px;
     color: rgb(222, 236, 231);
@@ -81,11 +84,9 @@ section{
     flex-direction: column;
     align-items: center;
 }
-
 .containerArticle{
     width: 90%;
 }
-
 h1{
     font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -95,11 +96,9 @@ h1{
     color: #884852;   
 }
 /*-------*/
-
 #name{
     color: white;
 }
-
 #intro{
     background-image: url(imgs/microscope.jpg);
     font-family: sans-serif, sans-serif;
@@ -109,7 +108,6 @@ h1{
     flex-direction: column;   
     color: white;
 }
-
 /*--animation title-*/
 h1 {
 	animation: 1s anim-lineUp ease-in-out ;
@@ -137,14 +135,12 @@ h1 {
     justify-content: flex-start;
     height: 85px;
 }
-
 .typing p {
     font-size: 37px;
     font-weight: lighter;
     display: inline-block; 
     position: relative;  
 }
-
 .text{
     display: inline-block;
     position: relative;
@@ -152,7 +148,6 @@ h1 {
     line-height: 60px;
     color: rgb(245, 245, 245);
 }
-
 .changeType::after{
     content: '';
     position: absolute;
@@ -180,11 +175,9 @@ h1 {
     border-radius: 20px;
     align-items: flex-start;
 }
-
 #imgFace{
     margin-bottom: 30px;
 }
-
 .aboutInner
 {
     width: 500px
@@ -194,16 +187,13 @@ h2{
     margin-bottom: 30px;
 
 }
-
 p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
 }
-
 .icons{
     margin: 30px 0px;
 }
-
 .icon:hover{
     opacity: 0.6;  
 }
@@ -211,13 +201,10 @@ p{
 .gifBlack{
         filter: grayscale(100%);
 }
-
 figure >img{
     height: 250px;
 }
-
 /*------------------Description-----------------------*/
-
 .description{   
     display: flex;
     justify-content: center;
@@ -232,8 +219,7 @@ figure >img{
 .descInside:hover{
     opacity: 0.5;
 }
-
-a > p{
+a>p{
     text-align: center;
     color: rgb(175, 179, 178);
     font-weight: bold;
@@ -241,7 +227,6 @@ a > p{
     margin-top: 10px;
     text-shadow: 2px 2px 2px black;
 }
-
 .imagi{
     height: 250px;
     width: 250px;
@@ -251,10 +236,6 @@ a > p{
 }
 
 .descInside{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: white;
     margin: 20px 100px;
 }
@@ -265,12 +246,10 @@ a > p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
-
 #publication > ol{
 
         list-style-type: none;   
 }
-
 ol>li{
     margin-bottom: 20px;
     
@@ -280,21 +259,17 @@ li > a, .spanBold{
     color:  rgb(81, 153, 129);
     font-weight: bold;
 }
-
 li > a:hover{
     color:rgba(25, 83, 63, 0.5) ;
 }
-
 ol{
     padding: 10px;
 }
-
 .resume{
     width: 400px;
     height: 300px;
     border: 1px solid black;
 }
-
 #work{
     display: flex;
     flex-wrap: wrap;
@@ -312,14 +287,13 @@ ol{
     opacity: 0.8; 
     margin-bottom: 10px;
 }
-
 #imgCareer >h1{  
     color: white;
     margin: 20px 30px;     
 }
 /*-----------------Optics------------------*/
 
-.opticContainer > p{
+.opticContainer >p{
     margin-bottom: 40px;
 }
 .optic >p{
@@ -336,7 +310,7 @@ figcaption{
     font-style: italic;
     text-align: center;
 }
-.titleAlign > h3{
+.titleAlign>h3{
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -360,13 +334,18 @@ figcaption{
 
 }
 /*-----------quantel-----------*/
-
 #quantel{
     background-color: white;
     padding:20px 30px;  
     border-radius: 10px; 
     box-shadow: 4px 4px 4px rgb(117, 126, 122);
-    margin-bottom: 60px;  
+    margin-bottom: 60px;   
+}
+#quantel>p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
 }
 .innerContainer{
     width: 400px;
@@ -387,7 +366,6 @@ figcaption{
     font-weight: bold;
 }
 /*-----luli------*/
-
 .titleGreen{
     color: rgb(135, 151, 143);
     
@@ -417,7 +395,6 @@ figcaption{
     text-shadow: 2px 2px 2px black;
 }
 /*------bioEmegencies-------*/
-
 .greenTitle{
     color:rgb(28, 32, 31) ;
 }
@@ -434,13 +411,14 @@ figcaption{
 }
 .exoDev, .imageAnalyse{
     width: 90%;
+ 
     padding: 50px 0px;
 }
 #imgContainerColor{
     background-color: rgb(204, 195, 181);
 }
-/*------------Fablab-----------------*/
 
+/*------------Fablab-----------------*/
 .fablab{
     width: 90%;
     padding-top: 90px;
@@ -501,4 +479,39 @@ figcaption{
 .imageAnalyse > h3{
     color: rgb(13, 98, 13);
     margin-bottom: 30px;
+}
+@media screen and (max-width:  1200px){
+    .menu > li{
+        font-size: 10px;
+        width: 90px;  
+    } 
+    header{
+        justify-content: flex-start;
+        font-size: 10px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    /*-------optics---------*/
+    #career>img, #imgcareer{
+        width: 100%;
+        height: auto;
+    }
+    #quantel{
+        padding: 10px 5px;
+    }
+    .titleAlign>h3{
+        font-size:20px ;
+    }
+    .erase{
+        display: none;
+    }
+    .titleOptics >img{
+        height: 50px;
+    }
+    #imgContainerColor >img, #biphotonSplitter{
+        width: 90%;
+        height: auto;
+    }
+
 }
