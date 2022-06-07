@@ -1,29 +1,29 @@
 const text = document.querySelector('.changeType');
-        const txt  =["Microscopy","Optics","Image analysis", "Fablab"]; 
+        const txt  =["Microscopy","Optics","Image analys", "Fablab"]; 
         
         var index=0;
-        var xiaBiao= 0;
-        var huan = true;
+        var texte= 0;
+        var show = true;
      
         setInterval(function(){
-            if(huan){
-                text.innerHTML = txt[xiaBiao].slice(0,++index);    
+            if(show){
+                text.innerHTML = txt[texte].slice(0,++index);    
             }
             else{
-                text.innerHTML = txt[xiaBiao].slice(0,index--);               
+                text.innerHTML = txt[texte].slice(0,index--);               
             }
-            if(index==txt[xiaBiao].length+1)
+            if(index==txt[texte].length+1)
             {   
-                huan = false;
+                show = false;
             }
             else if(index<0)
             { 
                 index = 0;
-                huan = true;
-                xiaBiao++;
-                if(xiaBiao>=txt.length)
+                show = true;
+                texte++;
+                if(texte>=txt.length)
                 {
-                    xiaBiao=0; 
+                    texte=0; 
                 }
             }
 

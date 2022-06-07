@@ -37,7 +37,7 @@ header{
   .menu > li >a{
       color: white;
   }
-ul{
+header>ul{
     list-style-type: none;
     display: flex;
     width: 100%;
@@ -187,6 +187,7 @@ h1 {
 }
 #imgFace{
     margin-bottom: 30px;
+    height:auto; 
 }
 .aboutInner
 {
@@ -195,7 +196,6 @@ h1 {
 h2{
     color: rgb(108, 139, 129);
     font-weight: bold;
-
     margin-bottom: 10px;
 
 }
