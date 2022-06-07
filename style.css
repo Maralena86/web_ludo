@@ -211,7 +211,7 @@ p{
 figure >img{
     height: 250px;
 }
-/*------------------Description-----------------------*/
+/*------------------work-----------------------*/
 .description{   
     display: flex;
     justify-content: center;
@@ -220,7 +220,7 @@ figure >img{
     margin: 0px;
     background-image: url('imgs/fond.jpg');
     background-size: cover;
-	background-position:center;   
+    background-position:center;   
 }
 
 .descInside:hover{
