@@ -98,7 +98,7 @@ h1{
 .imagesBottom>img{
     margin-bottom: 20px;
 }
-video{
+video, #work{
     background-color: black;
     
 }
