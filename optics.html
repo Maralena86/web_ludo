@@ -1,88 +1,260 @@
 <!DOCTYPE html>
-<html>
-<title>Tuto et posters</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="style.css">
-<style>
-.mySlides {display:none}
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Prata&family=Syncopate&family=Viga&display=swap" rel="stylesheet">
+    <title>Optics</title>
+</head>
 <body>
-    <header>
-        <div id="logo" ><img src="imgs/micro.png" width="20px" height="30px" alt="">LUDOVIC <br>LECONTE </div>
-        <nav>
-          <ul class="menu ">
-            <li class="col-4"><a href="index.html">HOME</a> </li>
-            <li class="col-4" ><a href="index.html#me">ABOUT ME</a> </li>
-            <li><a href="index.html#work">WORK</a></li> 
-          </ul>
-        </nav>
-    </header>
-    <section>
- <div class="containerArticle first">
-    <h1>MEDIAS</h1>
-    <div class="flexCol article ">
-        <h2>Videos</h2>
-        <div class="containerArticle flex">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/vnF_R0xWvMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/SBP1cEzaWwY?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <video class="large" src="video/preparation-sample.mp4" controls autoplay muted width="400" height="300px"></video>
-        </div>
-    </div>
-    <div class="flexCol article ">   
-    <h2>Posters</h2>
-    <p>Examples of posters realised from 2019 and 2022</p>
-    <div class="flex containerArticle" >
-        <div>
-            <img src="imgs/fablab/poster_lattice.png" style="height: 400px;cursor:pointer"
-            onclick="openModal();currentDiv(1)" >
-        </div>
-        <div >
-            <img src="imgs/fablab/poster_imageIT.png" style="height: 400px;cursor:pointer"
-            onclick="openModal();currentDiv(2)">
-        </div>
-        <div>
-            <img src="imgs/fablab/poster3d.png" style="height: 400px;cursor:pointer"
-            onclick="openModal();currentDiv(3)">
-        </div>
-    </div>
+  <header>
+    <div id="logo" ><img src="imgs/micro.png" width="20px" height="40px" alt="">LUDOVIC <br>LECONTE </div>
+    <nav>
+      <ul class="menu ">
+        <li class="col-4"><a href="index.html">HOME</a> </li>
+        <li class="col-4" ><a href="index.html#me">ABOUT ME</a> </li>
+        <li><a href="index.html#work">WORK</a></li> 
+      </ul>
+    </nav>
+  </header>
+    <section class="optic first ">
+      <div class="containerArticle">
+        <h1 class="lineUp">OPTICS</h1>
+        <div id="quantel" >  
+          <div class="titleOptics">
+            <div class="titleAlign">
+              <h3 class="titleGreen">QUANTEL</h3>
+              <p >(2005-2008)</p>
+            </div>
+            <img src="imgs/quantel.png" height="70px"alt="">
+          </div>
+          <p>Laser Technical in Quantel</p> 
+          <div class="flex">
+            <div class="innerContainer">
+              <img src="imgs/machine.png" height="250px"  alt="">
+              <div class="txtOptic1">
+                <p>Assembly of medical lasers</p>
+                <li>Veridical (dermatological and ophthalmological)</li>
+                <li>Medical environment (very demanding constraints)</li>
+                <li>Training of personnel (laser assembly)</li>
+              </div>
+            </div>
+            <div class="innerContainer">
+              <img src="https://img.directindustry.fr/images_di/photo-m2/7006-13455881.jpg" height=200px alt="">
+              <div class="txtOptic1">
+                <p>Assembly of industrial fiber lasers</p>
+                <li>Improvement and marketing of a prototype</li>
+                <li>Interaction with R&D (system improvement)</li>
+                <li>est reports (problems encountered and solutions provided)</li>
+              </div>
+          </div>    
 
-    <div id="myModal" class="modal ">
-    <span class="close" onclick="closeModal()" style="cursor:pointer">X</span>
-    <div class="w3-modal-content">
+          </div>
+        </div> 
+      </div>    
+    </section>
+    <section class="optic luli whiteText greenBackLight">
+      <div class="containerArticle">
+        <div class="titleOptics">
+          <div class="titleAlign"><h3 class="titleGreen">LULI</h3>
+            <p>(2008-2010)</p>
+          </div>
+          
+          <img src="imgs/optics/luli.png" height="80px"alt="">
+          <img src="imgs/optics/cea.png" class="erase" height="80px"alt="">
+          <img src="imgs/optics/cnrs.png" class="erase" width="80px"alt="">
+          <img src="imgs/optics/politechnique.png" class="erase" width="80px"alt="">
+        </div>
+        <p>
+          I joined the LULI2000 in September 2008 after leaving my permanent job at Quantel, a company specialized in lasers. After 3 years in this company and after having acquired a specialization in the field of medical and fiber lasers, I wanted to move towards research. Integrating the LULI also allowed me to acquire other knowledge in the field of lasers.The LULI is one of the very large research instruments and has an international reputation. It is equipped with the 2 largest civilian lasers (in laser power) in France, classified as large European instruments. International researchers use the laser chains to explore their themes in the field of Astrophysics. I worked at LULI2000, on the preparation of the beam shaping up to the experimental room. The researchers had particular demands on the pulse duration or the beam shaping before shooting a target to realize simulations, in an experimental chamber called MILKA. The LULI 2000 is composed of 4 laser chains, 2 of which are power lasers (NORTH and SOUTH) with single pulse neodymium glass. Each chain can deliver up to 1 kJ @ 1.053 µm in ns regime (nano2000 configuration).The repetition rate is limited to one shot every 90 minutes (between 4 and 6 "full energy" shots per day).
+        </p>
+        <div class="flexCol large">
+          
+            <div id="carouselOptics"  class="carousel slide " data-bs-ride="false">
+              <!-- Indicators -->
+              <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselOptics" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselOptics" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselOptics" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselOptics" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/optics/laser_hall.png" class="d-block w-100 imgLuli" alt="...">
+                  <div class="carousel-caption d-none d-md-block textOptic">     
+                    <p>Laser amplification hall</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/optics/experimental_milka.png" class="d-block w-100 imgLuli" alt="...">
+                  <div class="carousel-caption d-none d-md-block textOptic">
+                    <p>Experimental room MILKA</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/optics/goldCavity.png" class="d-block w-100 img-fluid imgLuli" height= 400px alt="...">
+                  <div class="carousel-caption d-none d-md-block textOptic">
+                    <p>Example of a sample (gold cavity)
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/optics/controlRoom.png" class="d-block w-100 img-fluid imgLuli" height= 400px alt="...">
+                  <div class="carousel-caption d-none d-md-block textOptic">
+                    <p>The control room</p>
+                  </div>
+                </div>
+                      <!-- Left and right controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselOptics" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselOptics" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="optic bioEmergences">
+      <div class="containerArticle">
+        <div class="titleOptics ">
+          <div class="titleAlign">
+            <h3 class="titleGreen">BIOEMERGENCES</h3>
+            <p>(2005-2008)</p>
+          </div>
+          <img src="imgs/bio_emergences.png" height="70px"alt="">
+          <img src="imgs/cnrs.png" class="erase" height="70px"alt="">
+          <img src="imgs/bio_imaging.png" class="erase" height="70px"alt="">
+        </div>
+        <p>
+              Nadine Peyriéras' team has developed in the context of European projects an original methodology of observation by light microscopy and reconstruction of cellular dynamics in the embryonic morphogenesis of model organisms. The reconstruction of cellular dynamics during embryogenesis is the basis for coupling genetic, molecular and cellular processes. This challenge is also that of a new interdisciplinarity which implies an interaction between theorists and experimentalists, from the design of experimental protocols to the development of theoretical tools necessary for the reconstruction of data and their interpretation.
+        </p>
+        <div class="flex">
+          <div class="innerContainer large">
+            <img src="imgs/dscm.png" height=250px alt="dscm">
+            <div class="txtOptic1">
+              <p>
+                  DSLM (Digital Scanned Light-sheet Microscopy)
+              </p>     
+            </div>
+          </div>
+          <div class="innerContainer ">
+             <img src="imgs/solid_works_dslm.png" height=250px alt="solidWorks">
+              <div class="txtOptic1">
+                <p>
+                  DSLM Solidworks modeling of a new imaging chamber
+                </p>     
+              </div>
+          </div>
+            <div class="innerContainer large">
+              <img src="imgs/nithoton.png" height=250px alt="">
+              <div class="txtOptic1">
+                <p>
+                  Biphotons SP5
+                </p>     
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="flexCol greenBackLight">
+      <div class="exoDev">
+        <h4>Example of a development:</h4>
+        <p>Optical design to couple two femto-second lasers on two SP5 in order to better distribute the power of the two lasers on both microscopes. It was possible to control independently the power arriving on the two microscopes via a software. To control the misalignment, it had sensors to check the power of the lasers by recording at each point of time the power variation.</p><br>
+        <div class="flex ">
+          <div id="imgContainerColor">
+            <img class="large" src="imgs/optics/exo_dev.png" height="400px"alt="microscope">
+          </div>
+          <img id="biphotonSplitter" class="large" src="imgs/optics/img_dev.png" height="400px" alt="biphoton splitter">
+        </div>
+      </div>
+    </div>
+    <section class="optic curie">
+      <div class="containerArticle">
+        <div class="titleOptics ">
+          <div class="titleAlign"><h3 class="titleGreen">CURIE</h3>
+            <p>(2013 until now)</p>
+          </div>
+          <img src="imgs/optics/curie.png"  alt="curie">
+          <img src="imgs/cnrs.png" class="erase" height="70px"alt="">
+          <img src="imgs/bio_imaging.png" class="erase" height="70px"alt="">
+        </div>
+        <p>
+          I have been working for more than 5 years on the cell and tissue platform (PICT), coordinated by Dr Jean Salamero (DR CNRS), which gathers very sophisticated equipment and advanced technologies in electron and optical microscopy.                                                The objective is to provide research groups within and outside the institute with advanced imaging approaches to study different themes at different scales of life (molecular and cellular scales, whole organisms and tissues in normal or pathological states). <br>
+          The platform is heavily involved in the development of new hardware, applications and software solutions, so we participate in R&D activities. In addition, we organize teaching and also national and international training courses and workshops.<br>
+          The Cell and Tissue Imaging Platform is a member of France BioImaging which is the national infrastructure for biological imaging, and is a member of the European consortium EuroBioImaging. The coordinator of the Institut Curie's cell and tissue imaging platform was Jean Salamero until 2018 <br>
+          The platform has prioritized contractual relationships with industry, which often lead to joint developments and gives research teams direct on-site access to new equipment before or as soon as they appear on the market. Strong partnerships have been established with Gattaca, based on joint developments, and with Nikon France and Europe B.V. Since 2007, the platform hosts and administers the Nikon Imaging Center @ Institut Curie - CNRS, one of nine such centers in the world and the only one in France.<br>
 
-    <div class="flex" style="max-width:1200px">
-    <img class="mySlides" src="imgs/fablab/poster_imageIT.png" style="height:90vh">
-    <img class="mySlides" src="imgs/fablab/poster_lattice.png" style="height: 90vh">
-    <img class="mySlides" src="imgs/fablab/poster3d.png" style="height: 90vh;">
-    <div class="descriptionPoster">
-        <div class="w3-display-container">
-        <p id="caption"></p>
-        <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
-        <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+          I worked at the Institut Curie on the PICT-IBiSA imaging platform which offers more than 40 advanced optical microscopy systems (video microscopes, confocal, super resolution...)<br>
+          One of my first missions was to train the users of the PICT-Lhomond on most of the systems. I intervene on these devices in case of breakdowns or problems of the users and I ensure the maintenance. I also participate in the maintenance and replacement/closing of these systems.<br>
+          I was in charge of the confocal spinning disk microscopy park as well as more complex systems such as the light sheet microscopes or the N-SIM (Structured Illumination Microscopy from Nikon). I also trained and accompanied users on techniques such as FRAP or photoactivation and opened a microfluidic system on a spinning disk via a collaboration with Fluigent.
+
+        </p>
+        <div class="flex">
+          <figure>
+            <img src="imgs/optics/cofocal.png" alt="cofocal">
+            <figcaption>Confocal SP8 MP</figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/optics/spinning.png" alt="spinning">
+            <figcaption>Spinning  équiped of the  Live SR and  FRAP System</figcaption>
+          </figure>
         </div>
-        <div class="w3-col s4">
-        <img class="demo w3-opacity w3-hover-opacity-off" src="imgs/fablab/poster_imageIT.png" style="width:100%" onclick="currentDiv(1)" alt="Bio image IT ">
+      </div>
+    </section>
+    <div class="flexCol greenBackLight">
+      <div class="exoDev">
+        <h4>Example of the development </h4>
+        <p>The PICT platform had identified the need for 4D imaging of new multicellular samples (spheroids and embryos of model organisms) among its users. This project, coordinated by Jean Salamero, was funded by the Labex CelTisPhyBio whose objective is to promote interdisciplinary projects to develop quantitative approaches based on the physical properties of single cells or at the level of their collective behavior in a multicellular model. The long term goal of these studies is to apply the results of this research to the etiology of cancers and to the development of new therapeutic approaches. On this project I worked in close collaboration with my colleague IR CNRS on the PICT platform.<br>
+        To carry out my project, I had to choose the most suitable modality for my needs, draw up specifications and finally purchase all the components. 
+          
+        I then made a 3D model on Solidworks and developed a new imaging chamber adaptable to the type of sample and to two detections objectives</p>
+      </div>
+      <div class="flex imagesBottom">
+        <img class="large" src="imgs/optics/dev_curie1.png" height="300px"alt="microscope">
+        <img class="large" src="imgs/optics/dev_curie2.png" height="300px" alt="">
+        <img class="large" src="imgs/optics/dev_curie3.png" height="300px" alt="">
+        <img  src="imgs/optics/dev_curie4.png" height="300px" alt="">
+        <figure>
+          <img class="large"src="imgs/optics/cell_curie.png" alt="cell">
+          <figcaption>EGFP Fribroblast vs Tomato Cancer Cell. Vignjevic’s Team UMR144   
+        </figcaption>
+        </figure>
+      </div>
+    </div>
+    <section class="optic">
+      <div class="containerArticle first">
+        <h4>Lattice Light sheet Microscope 
+        </h4>
+        <p>
+          Light sheet microscopy has gained popularity in recent decades, but it is an idea that is more than a hundred years old. However, the quality and especially the thickness of the light sheet remained a technical constraint limiting the accessible resolutions. Eric Betzig, (one of the 2014 Nobel Prize in Chemistry, for the SPT, PALM and STORM approaches), became interested in light sheet microscopy in 2011 paper by Planchon et al. Nature methods). He sought to overcome this resolution constraint while retaining the advantages of light sheet microscopy to study dynamic processes at the subcellular scale. Betzig and colleagues first used a Bessel beam in a planar illumination configuration (Bessel plane illumination) that allowed a sample to be illuminated with light sheets thin enough to allow high-speed imaging and near-isotropic 3D resolution. The use of the Bessel beam differs from previous planar illumination techniques that were used, especially in developmental biology. When the light sheet is thicker, out-of-focus fluorescence excitation occurs, so the advantages of reduced photobleaching by light sheet approaches, are not fully exploited. A Bessel beam is a non-diffracting, self-correcting beam that is not subject to this broadening and is therefore uniformly thin.
+          On this basis they then developed the "Lattice Light Sheet Microscope, LLSM", by combining Bessel beam illumination and Structured Illumination (SIM). The technology allows to visualize cellular processes with spatio-temporal performances impossible to reach with other fluorescence microscopy techniques such as: a 3D resolution of about 0.12 µm(x,y) and 0.3µm in Z and acquisition frequencies up to nearly 200 images per second (10gigas per time lapse)
+          The LLSM has been used to capture dynamic images of mitochondria, intracellular vesicles or mitotic chromosomes in living cells.
+        </p>
+        <p>
+          The Curie Institute has decided to go through the "3I Early Adopter" program, a solution based on a signed agreement for the continuous improvement of the microscope and the after-sales service. It should be noted that to date (2021) there are only two LLSM systems in France open to users, ours and the one proposed on the Bordeaux Imaging Center, a platform with which we exchange and collaborate regularly. I have been designated as the project manager, from its implementation to its availability, in collaboration with César Valades-Cruz. I organized the preparation of the room dedicated to the LLSM.V1. After a specific training by the engineers of 3i and once the system in hand, I set up a planning of metrological tests suitable to validate the whole of the performances of the microscope (analysis of the beam, powers...). Numerous defects, computer bugs, as well as needs, opinions and proposals, could be identified and sent back to the 3i company as our contract obliged us to do. The resulting LLSM.V2 version was delivered, installed and finally validated by us in early 2019.
+          It is important to note that LLSM imaging generates data that can exceed 1Tb per experiment/per day. This data flow/processing/analysis etc...., requires adapted IT solutions and resources. We have therefore acquired and deployed our storage/computing solution for processing in a "buffer server" directly connected to the microscope, while guaranteeing a link to the Institute Curie's data center.
+        </p>
+        <div class="flex imagesBottom">
+          <img src="imgs/optics/lattice1.png" height="300px" alt="">
+          <img src="imgs/optics/latiice2.png" height="300px" alt="">
+          <video src="video/spim.mp4" height="300px" autoplay loop controls></video>
         </div>
-        <div class="w3-col s4">
-        <img class="demo w3-opacity w3-hover-opacity-off" src="imgs/fablab/poster3d.png" style="width:100%" onclick="currentDiv(2)" alt="French Alps">
-        </div>
-        <div class="w3-col s4">
-        <img class="demo w3-opacity w3-hover-opacity-off" src="imgs/fablab/poster3d.png" style="width:100%" onclick="currentDiv(3)" alt="Mountains and fjords">
-        </div>
-    </div> <!-- End row -->
-    </div> <!-- End w3-content -->
+      </div>
+    </section>
+   
     
-    </div> <!-- End modal content -->
-    </div> <!-- End modal -->
-
+        
     </div>
-</section>
-
-<script src="script.js">
-
-</script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
-
