@@ -85,7 +85,7 @@ section{
     align-items: center;
 }
 .containerArticle{
-    width: 90%;
+    width: 95%;
 }
 h1{
     font-size: 60px;
@@ -98,7 +98,7 @@ h1{
 .imagesBottom>img{
     margin-bottom: 20px;
 }
-video, #work{
+video{
     background-color: black;
     
 }
@@ -212,15 +212,13 @@ figure >img{
     height: 250px;
 }
 /*------------------work-----------------------*/
-.description{   
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+#work{   
+  
     padding: 60px 0px;
     margin: 0px;
     background-image: url('imgs/fond.jpg');
     background-size: cover;
-    background-position:center;   
+	background-position:center;   
 }
 
 .descInside:hover{
@@ -531,4 +529,9 @@ figcaption{
     video, iframe{
         margin-bottom: 20px;
     }
+    
+
+    /*----fablab------*/
+    
+
 }
