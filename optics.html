@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <div id="logo" ><img src="imgs/micro.png" width="20px" height="30px" alt="">LUDOVIC <br>LECONTE </div>
+    <div id="logo" ><img src="imgs/micro.png" width="20px" height="40px" alt="">LUDOVIC <br>LECONTE </div>
     <nav>
       <ul class="menu ">
         <li class="col-4"><a href="index.html">HOME</a> </li>
@@ -31,9 +31,9 @@
               <h3 class="titleGreen">QUANTEL</h3>
               <p >(2005-2008)</p>
             </div>
-            <p>Laser Technical in Quantel</p>
-            <img src="imgs/quantel.png" width="70px"alt="">
-          </div> 
+            <img src="imgs/quantel.png" height="70px"alt="">
+          </div>
+          
           <div class="flex">
             <div class="innerContainer">
               <img src="imgs/machine.png" height="250px"  alt="">
@@ -66,24 +66,24 @@
           </div>
           
           <img src="imgs/optics/luli.png" height="80px"alt="">
-          <img src="imgs/optics/cea.png" height="80px"alt="">
-          <img src="imgs/optics/cnrs.png" width="80px"alt="">
-          <img src="imgs/optics/politechnique.png" width="80px"alt="">
+          <img src="imgs/optics/cea.png" class="erase" height="80px"alt="">
+          <img src="imgs/optics/cnrs.png" class="erase" width="80px"alt="">
+          <img src="imgs/optics/politechnique.png" class="erase" width="80px"alt="">
         </div>
         <p>
           I joined the LULI2000 in September 2008 after leaving my permanent job at Quantel, a company specialized in lasers. After 3 years in this company and after having acquired a specialization in the field of medical and fiber lasers, I wanted to move towards research. Integrating the LULI also allowed me to acquire other knowledge in the field of lasers.The LULI is one of the very large research instruments and has an international reputation. It is equipped with the 2 largest civilian lasers (in laser power) in France, classified as large European instruments. International researchers use the laser chains to explore their themes in the field of Astrophysics. I worked at LULI2000, on the preparation of the beam shaping up to the experimental room. The researchers had particular demands on the pulse duration or the beam shaping before shooting a target to realize simulations, in an experimental chamber called MILKA. The LULI 2000 is composed of 4 laser chains, 2 of which are power lasers (NORTH and SOUTH) with single pulse neodymium glass. Each chain can deliver up to 1 kJ @ 1.053 µm in ns regime (nano2000 configuration).The repetition rate is limited to one shot every 90 minutes (between 4 and 6 "full energy" shots per day).
         </p>
-        <div class="flexCol">
+        <div class="flexCol large">
           
             <div id="carouselOptics"  class="carousel slide " data-bs-ride="false">
               <!-- Indicators -->
-              <div class="carousel-indicators">
+              <div class="carousel-indicators ">
                 <button type="button" data-bs-target="#carouselOptics" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselOptics" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselOptics" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselOptics" data-bs-slide-to="3" aria-label="Slide 4"></button>
               </div>
-              <div class="carousel-inner ">
+              <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="imgs/optics/laser_hall.png" class="d-block w-100 imgLuli" alt="...">
                   <div class="carousel-caption d-none d-md-block textOptic">     
@@ -131,13 +131,15 @@
             <h3 class="titleGreen">BIOEMERGENCES</h3>
             <p>(2005-2008)</p>
           </div>
-          <img src="imgs/bio_emergences.png" height="70px"alt=""><img src="imgs/cnrs.png" height="70px"alt=""><img src="imgs/bio_imaging.png" height="70px"alt="">
+          <img src="imgs/bio_emergences.png" height="70px"alt="">
+          <img src="imgs/cnrs.png" class="erase" height="70px"alt="">
+          <img src="imgs/bio_imaging.png" class="erase" height="70px"alt="">
         </div>
         <p>
               Nadine Peyriéras' team has developed in the context of European projects an original methodology of observation by light microscopy and reconstruction of cellular dynamics in the embryonic morphogenesis of model organisms. The reconstruction of cellular dynamics during embryogenesis is the basis for coupling genetic, molecular and cellular processes. This challenge is also that of a new interdisciplinarity which implies an interaction between theorists and experimentalists, from the design of experimental protocols to the development of theoretical tools necessary for the reconstruction of data and their interpretation.
         </p>
         <div class="flex">
-          <div class="innerContainer ">
+          <div class="innerContainer large">
             <img src="imgs/dscm.png" height=250px alt="dscm">
             <div class="txtOptic1">
               <p>
@@ -153,7 +155,7 @@
                 </p>     
               </div>
           </div>
-            <div class="innerContainer ">
+            <div class="innerContainer large">
               <img src="imgs/nithoton.png" height=250px alt="">
               <div class="txtOptic1">
                 <p>
@@ -170,9 +172,9 @@
         <p>Optical design to couple two femto-second lasers on two SP5 in order to better distribute the power of the two lasers on both microscopes. It was possible to control independently the power arriving on the two microscopes via a software. To control the misalignment, it had sensors to check the power of the lasers by recording at each point of time the power variation.</p><br>
         <div class="flex ">
           <div id="imgContainerColor">
-            <img src="imgs/optics/exo_dev.png" height="400px"alt="microscope">
+            <img class="large" src="imgs/optics/exo_dev.png" height="400px"alt="microscope">
           </div>
-          <img src="imgs/optics/img_dev.png" height="400px" alt="">
+          <img id="biphotonSplitter" class="large" src="imgs/optics/img_dev.png" height="400px" alt="biphoton splitter">
         </div>
       </div>
     </div>
@@ -182,7 +184,9 @@
           <div class="titleAlign"><h3 class="titleGreen">CURIE</h3>
             <p>(2013 until now)</p>
           </div>
-          <img src="imgs/optics/curie.png" alt="curie"><img src="imgs/cnrs.png" height="70px"alt=""><img src="imgs/bio_imaging.png" height="70px"alt="">
+          <img src="imgs/optics/curie.png"  alt="curie">
+          <img src="imgs/cnrs.png" class="erase" height="70px"alt="">
+          <img src="imgs/bio_imaging.png" class="erase" height="70px"alt="">
         </div>
         <p>
           I have been working for more than 5 years on the cell and tissue platform (PICT), coordinated by Dr Jean Salamero (DR CNRS), which gathers very sophisticated equipment and advanced technologies in electron and optical microscopy.                                                The objective is to provide research groups within and outside the institute with advanced imaging approaches to study different themes at different scales of life (molecular and cellular scales, whole organisms and tissues in normal or pathological states). <br>
@@ -215,14 +219,13 @@
           
         I then made a 3D model on Solidworks and developed a new imaging chamber adaptable to the type of sample and to two detections objectives</p>
       </div>
-      <div class="flex">
-
-        <img src="imgs/optics/dev_curie1.png" height="300px"alt="microscope">
-        <img src="imgs/optics/dev_curie2.png" height="300px" alt="">
-        <img src="imgs/optics/dev_curie3.png" height="300px" alt="">
-        <img src="imgs/optics/dev_curie4.png" height="300px" alt="">
+      <div class="flex imagesBottom">
+        <img class="large" src="imgs/optics/dev_curie1.png" height="300px"alt="microscope">
+        <img class="large" src="imgs/optics/dev_curie2.png" height="300px" alt="">
+        <img class="large" src="imgs/optics/dev_curie3.png" height="300px" alt="">
+        <img  src="imgs/optics/dev_curie4.png" height="300px" alt="">
         <figure>
-          <img src="imgs/optics/cell_curie.png" alt="cell">
+          <img class="large"src="imgs/optics/cell_curie.png" alt="cell">
           <figcaption>EGFP Fribroblast vs Tomato Cancer Cell. Vignjevic’s Team UMR144   
         </figcaption>
         </figure>
@@ -241,10 +244,10 @@
           The Curie Institute has decided to go through the "3I Early Adopter" program, a solution based on a signed agreement for the continuous improvement of the microscope and the after-sales service. It should be noted that to date (2021) there are only two LLSM systems in France open to users, ours and the one proposed on the Bordeaux Imaging Center, a platform with which we exchange and collaborate regularly. I have been designated as the project manager, from its implementation to its availability, in collaboration with César Valades-Cruz. I organized the preparation of the room dedicated to the LLSM.V1. After a specific training by the engineers of 3i and once the system in hand, I set up a planning of metrological tests suitable to validate the whole of the performances of the microscope (analysis of the beam, powers...). Numerous defects, computer bugs, as well as needs, opinions and proposals, could be identified and sent back to the 3i company as our contract obliged us to do. The resulting LLSM.V2 version was delivered, installed and finally validated by us in early 2019.
           It is important to note that LLSM imaging generates data that can exceed 1Tb per experiment/per day. This data flow/processing/analysis etc...., requires adapted IT solutions and resources. We have therefore acquired and deployed our storage/computing solution for processing in a "buffer server" directly connected to the microscope, while guaranteeing a link to the Institute Curie's data center.
         </p>
-        <div class="flex">
+        <div class="flex imagesBottom">
           <img src="imgs/optics/lattice1.png" height="300px" alt="">
           <img src="imgs/optics/latiice2.png" height="300px" alt="">
-          <video src="video/spim.mp4"  height="300px"autoplay loop controls></video>
+          <video src="video/spim.mp4" height="300px" autoplay loop controls></video>
         </div>
       </div>
     </section>
