@@ -4,14 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="style.css">
-<style>
-.mySlides {display:none}
-</style>
+
 <body>
     <header>
-        <div id="logo" class="flex" ><img src="imgs/micro.png" alt=""> </div>
+        <div id="logo" class="flex" >
+          <img src="imgs/micro.png" alt="microscope"> 
+        </div>
         <nav>
-          <ul class="nav-menu menu flex">
+          <ul class="menu flex">
             <li class="col-4 nav-item"><a href="index.html">HOME</a> </li>
             <li class="col-4 nav-item" ><a href="index.html#me">ABOUT ME</a> </li>
             <li><a href="index.html#work">WORK</a></li> 
@@ -19,74 +19,63 @@
         </nav>
     </header>
     <section>
- <div class="containerArticle first">
-    <h1>MEDIAS</h1>
-    <div class="flexCol article ">
-
-        <h2>VIDEOS</h2>
-
-        <div class="containerArticle flex">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/vnF_R0xWvMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/SBP1cEzaWwY?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <video class="large" src="video/preparation-sample.mp4" controls autoplay muted width="400" height="300px"></video>
+        <div class="containerArticle first">
+            <h1>MEDIAS</h1>
+            <div class="flexCol article ">
+                <h2>VIDEOS</h2>
+                <div class="containerArticle flex">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/vnF_R0xWvMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/SBP1cEzaWwY?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <video class="large" src="video/preparation-sample.mp4" controls autoplay muted width="400" height="300px"></video>
+                </div>
+            </div>
+            <div class="flexCol article ">   
+            <h2>POSTERS</h2>
+            <p>Examples of posters realised from 2019 and 2022</p>
+            <div class="flex containerArticle" >
+                <div>
+                    <img src="imgs/fablab/poster_lattice.png" style="height: 400px;cursor:pointer"
+                    onclick="openModal();currentDiv(1)" >
+                </div>
+                <div >
+                    <img src="imgs/fablab/poster_imageIT.png" style="height: 400px;cursor:pointer"
+                    onclick="openModal();currentDiv(2)">
+                </div>
+                <div>
+                    <img src="imgs/fablab/poster3d.png" style="height: 400px;cursor:pointer"
+                    onclick="openModal();currentDiv(3)">
+                </div>
+            </div>
+            <div id="myModal" class="modal ">
+                <span class="close" onclick="closeModal()" style="cursor:pointer">X</span>
+                <div class="w3-modal-content">
+                    <div class="flex" style="max-width:1200px">
+                        <img class="mySlides" src="imgs/fablab/poster_imageIT.png" style="height:90vh">
+                        <img class="mySlides" src="imgs/fablab/poster_lattice.png" style="height: 90vh">
+                        <img class="mySlides" src="imgs/fablab/poster3d.png" style="height: 90vh;">
+                    <div class="descriptionPoster">
+                    <div class="w3-display-container">
+                        <p id="caption"></p>
+                        <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+                        <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+                    </div>
+                    <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="imgs/fablab/poster_imageIT.png" style="width:100%" onclick="currentDiv(1)" alt="Bio image IT ">
+                    </div>
+                    <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="imgs/fablab/poster3d.png" style="width:100%" onclick="currentDiv(2)" alt="French Alps">
+                    </div>
+                    <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="imgs/fablab/poster3d.png" style="width:100%" onclick="currentDiv(3)" alt="Mountains and fjords">
+                    </div>
+                </div> <!-- End row -->
+            </div> <!-- End w3-content -->
+            
+        </div> <!-- End modal content -->
+            </div> <!-- End modal -->
         </div>
-    </div>
-    <div class="flexCol article ">   
-
-    <h2>POSTERS</h2>
-
-    <p>Examples of posters realised from 2019 and 2022</p>
-    <div class="flex containerArticle" >
-        <div>
-            <img src="imgs/fablab/poster_lattice.png" style="height: 400px;cursor:pointer"
-            onclick="openModal();currentDiv(1)" >
-        </div>
-        <div >
-            <img src="imgs/fablab/poster_imageIT.png" style="height: 400px;cursor:pointer"
-            onclick="openModal();currentDiv(2)">
-        </div>
-        <div>
-            <img src="imgs/fablab/poster3d.png" style="height: 400px;cursor:pointer"
-            onclick="openModal();currentDiv(3)">
-        </div>
-    </div>
-
-    <div id="myModal" class="modal ">
-    <span class="close" onclick="closeModal()" style="cursor:pointer">X</span>
-    <div class="w3-modal-content">
-
-    <div class="flex" style="max-width:1200px">
-    <img class="mySlides" src="imgs/fablab/poster_imageIT.png" style="height:90vh">
-    <img class="mySlides" src="imgs/fablab/poster_lattice.png" style="height: 90vh">
-    <img class="mySlides" src="imgs/fablab/poster3d.png" style="height: 90vh;">
-    <div class="descriptionPoster">
-        <div class="w3-display-container">
-        <p id="caption"></p>
-        <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
-        <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
-        </div>
-        <div class="w3-col s4">
-        <img class="demo w3-opacity w3-hover-opacity-off" src="imgs/fablab/poster_imageIT.png" style="width:100%" onclick="currentDiv(1)" alt="Bio image IT ">
-        </div>
-        <div class="w3-col s4">
-        <img class="demo w3-opacity w3-hover-opacity-off" src="imgs/fablab/poster3d.png" style="width:100%" onclick="currentDiv(2)" alt="French Alps">
-        </div>
-        <div class="w3-col s4">
-        <img class="demo w3-opacity w3-hover-opacity-off" src="imgs/fablab/poster3d.png" style="width:100%" onclick="currentDiv(3)" alt="Mountains and fjords">
-        </div>
-    </div> <!-- End row -->
-    </div> <!-- End w3-content -->
-    
-    </div> <!-- End modal content -->
-    </div> <!-- End modal -->
-
-    </div>
-</section>
-
-<script src="script.js">
-
-</script>
-    
+    </section>
+    <script src="script.js"></script>   
 </body>
 </html>
 

@@ -1,7 +1,10 @@
-body{
+*{
     margin:0;
     padding: 0;
-    background-color: rgb(239, 245, 243);   
+       
+}
+body{
+    background-color: rgb(239, 245, 243);
 }
 header{
    width: 100%;
@@ -42,6 +45,7 @@ header>ul{
     width: 100%;
     height: 100%;
     justify-content: space-around;
+    margin-top: 0px;
 }
 
 header ul li
@@ -186,7 +190,7 @@ h1 {
 
 #aboutMe{
     background-color: white;
-    padding: 50px 0px;
+    padding: 50px 10px;
     border-radius: 20px;
     align-items: flex-start;
 
@@ -202,7 +206,7 @@ h1 {
 h2{
     color: rgb(108, 139, 129);
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
 }
 p{
@@ -210,7 +214,10 @@ p{
     font-size: 18px;
 }
 .icons{
-    margin: 30px 0px;
+    margin: 40px 0px;
+}
+.icons>img, .icon >img{
+    height:30px;  
 }
 .icon:hover{
     opacity: 0.6;  
@@ -462,6 +469,9 @@ figcaption{
     margin-bottom: 40px;
 }
 /*---tuto---*/
+.mySlides {
+    display:none
+}
 .first{
     padding-top: 90px;
 }
@@ -512,6 +522,7 @@ figcaption{
         font-size: 10px;
         width: 90px;  
     } 
+    
     header{
         justify-content: flex-start;
         font-size: 10px;
@@ -519,6 +530,10 @@ figcaption{
     h1{
         font-size: 25px;
         margin-bottom: 10px;
+    }
+    
+    .icons>img, .icon >img{
+        height:25px;  
     }
     /*-------optics---------*/
     #career>img, #imgcareer{
