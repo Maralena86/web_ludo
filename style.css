@@ -4,7 +4,18 @@
        
 }
 body{
-    background-color: rgb(239, 245, 243);
+    background-color: rgb(248, 248, 248);
+    font-family: 'Montserrat', sans-serif;
+
+}
+h2{
+    color: rgb(108, 139, 129);
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+p{
+    font-size: 18px;
 }
 header{
    width: 100%;
@@ -19,6 +30,7 @@ header{
     height: 70px;	
 	position: fixed;
 	z-index: 1;
+    box-shadow: 2px 2px 12px black;
 }
 
 .menu {
@@ -29,7 +41,7 @@ header{
   }
   .menu > li {
     float: left;
-    width: 130px;   
+    width: 200px;   
     line-height: 40px;
     background: rgba(0, 0, 0);
     cursor: pointer;
@@ -62,7 +74,7 @@ a{
     text-decoration: none;
 }
 #logo{
-    margin-left: 20px;
+    margin-left: 40px;
     
 }
 #logo >img{
@@ -74,7 +86,7 @@ a{
 /* for all */
 section{
     min-height: 100vh;
-    width: 100%;
+    padding: 0px 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,15 +104,13 @@ section{
     align-items: center;
 }
 .containerArticle{
-    width: 95%;
+    padding: 0px 60px;
 }
 h1{
-    font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
     font-weight: bold;
     margin-left: 30px;
     margin-bottom: 30px;
-    text-shadow: 3px 3px 3px rgb(13, 32, 17);  
     color: #444b48; 
     display: inline-block;  
 }
@@ -117,10 +127,12 @@ video{
 /*-------*/
 #name{
     color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 50px;
 }
 #intro{
     background-image: url(imgs/microscope.jpg);
-    font-family: sans-serif, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     font-weight: bold;
@@ -128,8 +140,9 @@ video{
     color: white;
 }
 /*--animation title-*/
-h1 {
+ h1 {
 	animation: 1s anim-lineUp ease-in-out ;
+   
   }
   @keyframes anim-lineUp {
 	0% {
@@ -152,10 +165,10 @@ h1 {
 .typing-container {
     display: flex;
     justify-content: flex-start;
-    height: 85px;
+    height: 75px;
 }
 .typing p {
-    font-size: 37px;
+    font-size: 35px;
     font-weight: lighter;
     display: inline-block; 
     position: relative;  
@@ -172,6 +185,7 @@ h1 {
     position: absolute;
     right: -10px;
     top: 5px;
+ 
     height: 100%;
     width: 3px;     
     background-color: #fff;
@@ -187,7 +201,9 @@ h1 {
     }
 }
 /*--------------about me---------------*/
-
+.container-aboutMe{
+    width: 100%;
+}
 #aboutMe{
     background-color: white;
     padding: 50px 10px;
@@ -203,21 +219,18 @@ h1 {
 {
     width: 600px
 }
-h2{
-    color: rgb(108, 139, 129);
-    font-weight: bold;
-    margin-bottom: 15px;
 
-}
-p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.my-experience{
     font-size: 18px;
+    text-align: justify;
 }
 .icons{
-    margin: 40px 0px;
+    margin:  10px 25px;
+    display: flex;
+    gap: 22px;
 }
 .icons>img, .icon >img{
-    height:30px;  
+    height:35px;  
 }
 .icon:hover{
     opacity: 0.6;  
@@ -233,10 +246,8 @@ figure >img{
 #work{   
   
     padding: 60px 0px;
-    margin: 0px;
-    background-image: url('imgs/fond.jpg');
-    background-size: cover;
-	background-position:center;   
+    background-color: black;
+    min-height: 100vh;
 }
 
 .descInside:hover{
@@ -246,7 +257,7 @@ a>p{
     text-align: center;
     color: rgb(175, 179, 178);
     font-weight: bold;
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 10px;
     text-shadow: 2px 2px 2px black;
 }
@@ -265,9 +276,8 @@ a>p{
 /*---------------------Publications---------------------------*/
 
 #publication{
-    width: 90%;   
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    width: 100%;      
+    text-align: justify;
 }
 #publication > ol{
 
@@ -312,22 +322,21 @@ ol{
 }
 #imgCareer >h1{  
     color: white;
-    margin: 20px 30px;     
+       
 }
 /*-----------------Optics------------------*/
 
-.opticContainer >p{
-    margin-bottom: 40px;
+.subtitle-year{
+    margin:none;
 }
-.optic >p{
-    font-size: 20px;
-    font-family: sans-serif;
-    margin-bottom: 40px;   
+.optic>.containerArticle>p, .exoDev>p{   
+    margin:  50px 0px; 
+    text-align: justify;  
 }
 .greenBackLight{
     background-image:url("imgs/fond.jpg");
     box-shadow: 3px 3px 3px rgb(39, 49, 47);
-    color: rgb(168, 189, 175);   
+    color: rgb(212, 216, 210);   
 }
 figcaption{
     font-style: italic;
@@ -336,7 +345,7 @@ figcaption{
 .imgOptic{
     height: 280px;
 }
-.titleAlign>h3{
+.titleAlign>h2{
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -347,7 +356,7 @@ figcaption{
 
 .titleOptics{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: 40px 0px;
@@ -360,14 +369,7 @@ figcaption{
 
 }
 /*-----------quantel-----------*/
-#quantel{
-    background-color: white;
-    padding:20px 30px;  
-    border-radius: 10px; 
-    border: 1px solid rgb(224, 213, 213);
-    box-shadow: 4px 4px 4px rgb(117, 126, 122);
-    margin-bottom: 60px;   
-}
+
 #quantel>p{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -380,13 +382,16 @@ figcaption{
     margin: 20px;
     border: 1px solid rgb(202, 198, 198);
     flex-direction: column;
-    box-shadow: 3px 3px 3px rgb(158, 155, 155);
+    box-shadow: 3px 3px 3px rgb(214, 212, 212);
     background-color: white;
     border-radius: 10px;
 }
 
+.quantel{
+    width: 100%;
+}
 .txtOptic1{
-    padding:10px 20px 50px 20px
+    padding:10px 20px;
 }
 .txtOptic1 >p{
     color: rgb(81, 153, 129); 
@@ -426,11 +431,7 @@ figcaption{
 .greenTitle{
     color:rgb(28, 32, 31) ;
 }
-.titleOptics>p{
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(4, 32, 17);
-}
+
 
 #opticContainer{
     display: flex;
@@ -438,7 +439,7 @@ figcaption{
     padding-top: 100px;
 }
 .exoDev, .imageAnalyse{
-    width: 90%;
+    width: 85%;
  
     padding: 50px 0px;
 }
@@ -453,10 +454,11 @@ figcaption{
 }
 .article{
     margin-bottom: 50px;
-    padding: 25px 50px;
-    border-radius: 20px;
+    padding: 35px 50px;
+    border-radius: 10px;
+
     background-color: white;
-    box-shadow: 4px 4px 4px rgb(145, 167, 160);
+   
 }
 .fablabArticle >h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -510,6 +512,9 @@ figcaption{
 .imageAnalyse > h3{
     color: rgb(13, 98, 13);
     margin-bottom: 30px;
+}
+footer{
+    padding: 20px;
 }
 @media screen and (max-width:  1200px){
     #logo>img{

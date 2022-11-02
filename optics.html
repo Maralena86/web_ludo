@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Prata&family=Syncopate&family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
     <title>Optics</title>
 </head>
 <body>
@@ -24,13 +25,13 @@
       </ul>
     </nav>
   </header>
-    <section class="optic first ">
-      <div class="containerArticle">
-        <h1 class="lineUp">OPTICS</h1>
-        <div id="quantel" >  
-          <div class="titleOptics">
+  <div >
+    
+    <section class="optic d-flex flex-column"><h1 class="lineUp">OPTICS</h1>
+      <div class="containerArticle quantel">
+        <div class="titleOptics">
             <div class="titleAlign">
-              <h3 class="titleGreen">QUANTEL</h3>
+              <h2 class="titleGreen">QUANTEL</h2>
               <p >(2005-2008)</p>
             </div>
             <img src="imgs/quantel.png" height="70" alt="quantel logo">
@@ -66,9 +67,10 @@
     <section class="optic luli whiteText greenBackLight">
       <div class="containerArticle">
         <div class="titleOptics">
-          <div class="titleAlign"><h3 class="titleGreen">LULI</h3>
+          <div class="titleAlign">
+            <h2 class="titleGreen">LULI</h2>
             <p>(2008-2010)</p>
-          </div>
+          </div>  
           
           <img src="imgs/optics/luli.png" height="80" alt="luli logo">
           <img src="imgs/optics/cea.png" class="erase" height="80" alt="cea logo">
@@ -133,7 +135,7 @@
       <div class="containerArticle">
         <div class="titleOptics ">
           <div class="titleAlign">
-            <h3 class="titleGreen">BIOEMERGENCES</h3>
+            <h2 class="titleGreen">BIOEMERGENCES</h2>
             <p>(2005-2008)</p>
           </div>
           <img src="imgs/bio_emergences.png" height="70" alt="">
@@ -171,7 +173,7 @@
           </div>
         </div>
     </section>
-    <div class="flexCol greenBackLight">
+    <div class="flexCol greenBackLight optic">
       <div class="exoDev">
         <h4>Example of a development:</h4>
         <p>Optical design to couple two femto-second lasers on two SP5 in order to better distribute the power of the two lasers on both microscopes. It was possible to control independently the power arriving on the two microscopes via a software. To control the misalignment, it had sensors to check the power of the lasers by recording at each point of time the power variation.</p><br>
@@ -186,37 +188,38 @@
     <section class="optic curie">
       <div class="containerArticle">
         <div class="titleOptics ">
-          <div class="titleAlign"><h3 class="titleGreen">CURIE</h3>
-            <p>(2013 until now)</p>
+          <div class="titleAlign"><h2 class="titleGreen">CURIE</h2>
+            <p class="subtitle-year">(2013 until now)</p>
           </div>
           <img src="imgs/optics/curie.png"  alt="curie">
           <img src="imgs/cnrs.png" class="erase" height="70" alt="cnrs logo">
           <img src="imgs/bio_imaging.png" class="erase" height="70" alt="bioImage logo">
         </div>
         <p>
-          I have been working for more than 5 years on the cell and tissue platform (PICT), coordinated by Dr Jean Salamero (DR CNRS), which gathers very sophisticated equipment and advanced technologies in electron and optical microscopy.                                                The objective is to provide research groups within and outside the institute with advanced imaging approaches to study different themes at different scales of life (molecular and cellular scales, whole organisms and tissues in normal or pathological states). <br>
+          I have been working for more than 5 years on the cell and tissue platform (PICT), coordinated by Dr Jean Salamero (DR CNRS), which gathers very sophisticated equipment and advanced technologies in electron and optical microscopy.                                                The objective is to provide research groups within and outside the institute with advanced imaging approaches to study different themes at different scales of life (molecular and cellular scales, whole organisms and tissues in normal or pathological states). </p>
+          <p>
           The platform is heavily involved in the development of new hardware, applications and software solutions, so we participate in R&D activities. In addition, we organize teaching and also national and international training courses and workshops.<br>
           The Cell and Tissue Imaging Platform is a member of France BioImaging which is the national infrastructure for biological imaging, and is a member of the European consortium EuroBioImaging. The coordinator of the Institut Curie's cell and tissue imaging platform was Jean Salamero until 2018 <br>
-          The platform has prioritized contractual relationships with industry, which often lead to joint developments and gives research teams direct on-site access to new equipment before or as soon as they appear on the market. Strong partnerships have been established with Gattaca, based on joint developments, and with Nikon France and Europe B.V. Since 2007, the platform hosts and administers the Nikon Imaging Center @ Institut Curie - CNRS, one of nine such centers in the world and the only one in France.<br>
-
-          I worked at the Institut Curie on the PICT-IBiSA imaging platform which offers more than 40 advanced optical microscopy systems (video microscopes, confocal, super resolution...)<br>
+          The platform has prioritized contractual relationships with industry, which often lead to joint developments and gives research teams direct on-site access to new equipment before or as soon as they appear on the market. Strong partnerships have been established with Gattaca, based on joint developments, and with Nikon France and Europe B.V. Since 2007, the platform hosts and administers the Nikon Imaging Center @ Institut Curie - CNRS, one of nine such centers in the world and the only one in France.</p>
+          <div class="flex">
+            <figure>
+              <img src="imgs/optics/cofocal.png" class="large" alt="cofocal">
+              <figcaption>Confocal SP8 MP</figcaption>
+            </figure>
+            <figure>
+              <img src="imgs/optics/spinning.png" class="large" alt="spinning">
+              <figcaption>Spinning  équiped of the  Live SR and  FRAP System</figcaption>
+            </figure>
+          </div>
+          <p>I worked at the Institut Curie on the PICT-IBiSA imaging platform which offers more than 40 advanced optical microscopy systems (video microscopes, confocal, super resolution...)<br>
           One of my first missions was to train the users of the PICT-Lhomond on most of the systems. I intervene on these devices in case of breakdowns or problems of the users and I ensure the maintenance. I also participate in the maintenance and replacement/closing of these systems.<br>
           I was in charge of the confocal spinning disk microscopy park as well as more complex systems such as the light sheet microscopes or the N-SIM (Structured Illumination Microscopy from Nikon). I also trained and accompanied users on techniques such as FRAP or photoactivation and opened a microfluidic system on a spinning disk via a collaboration with Fluigent.
 
         </p>
-        <div class="flex">
-          <figure>
-            <img src="imgs/optics/cofocal.png" class="large" alt="cofocal">
-            <figcaption>Confocal SP8 MP</figcaption>
-          </figure>
-          <figure>
-            <img src="imgs/optics/spinning.png" class="large" alt="spinning">
-            <figcaption>Spinning  équiped of the  Live SR and  FRAP System</figcaption>
-          </figure>
-        </div>
+        
       </div>
     </section>
-    <div class="flexCol greenBackLight">
+    <div class="flexCol greenBackLight optic">
       <div class="exoDev">
         <h4>Example of the development </h4>
         <p>
@@ -247,10 +250,6 @@
           On this basis they then developed the "Lattice Light Sheet Microscope, LLSM", by combining Bessel beam illumination and Structured Illumination (SIM). The technology allows to visualize cellular processes with spatio-temporal performances impossible to reach with other fluorescence microscopy techniques such as: a 3D resolution of about 0.12 µm(x,y) and 0.3µm in Z and acquisition frequencies up to nearly 200 images per second (10gigas per time lapse)
           The LLSM has been used to capture dynamic images of mitochondria, intracellular vesicles or mitotic chromosomes in living cells.
         </p>
-        <p>
-          The Curie Institute has decided to go through the "3I Early Adopter" program, a solution based on a signed agreement for the continuous improvement of the microscope and the after-sales service. It should be noted that to date (2021) there are only two LLSM systems in France open to users, ours and the one proposed on the Bordeaux Imaging Center, a platform with which we exchange and collaborate regularly. I have been designated as the project manager, from its implementation to its availability, in collaboration with César Valades-Cruz. I organized the preparation of the room dedicated to the LLSM.V1. After a specific training by the engineers of 3i and once the system in hand, I set up a planning of metrological tests suitable to validate the whole of the performances of the microscope (analysis of the beam, powers...). Numerous defects, computer bugs, as well as needs, opinions and proposals, could be identified and sent back to the 3i company as our contract obliged us to do. The resulting LLSM.V2 version was delivered, installed and finally validated by us in early 2019.
-          It is important to note that LLSM imaging generates data that can exceed 1Tb per experiment/per day. This data flow/processing/analysis etc...., requires adapted IT solutions and resources. We have therefore acquired and deployed our storage/computing solution for processing in a "buffer server" directly connected to the microscope, while guaranteeing a link to the Institute Curie's data center.
-        </p>
         <div class="flex imagesBottom">
           <img src="imgs/optics/lattice1.png" class="large imgOptic" alt="lattice">
           <img src="imgs/optics/latiice2.png"class="large imgOptic"  alt="lattice">
@@ -260,8 +259,14 @@
             
           </video>
         </div>
+        <p>
+          The Curie Institute has decided to go through the "3I Early Adopter" program, a solution based on a signed agreement for the continuous improvement of the microscope and the after-sales service. It should be noted that to date (2021) there are only two LLSM systems in France open to users, ours and the one proposed on the Bordeaux Imaging Center, a platform with which we exchange and collaborate regularly. I have been designated as the project manager, from its implementation to its availability, in collaboration with César Valades-Cruz. I organized the preparation of the room dedicated to the LLSM.V1. After a specific training by the engineers of 3i and once the system in hand, I set up a planning of metrological tests suitable to validate the whole of the performances of the microscope (analysis of the beam, powers...). Numerous defects, computer bugs, as well as needs, opinions and proposals, could be identified and sent back to the 3i company as our contract obliged us to do. The resulting LLSM.V2 version was delivered, installed and finally validated by us in early 2019.
+          It is important to note that LLSM imaging generates data that can exceed 1Tb per experiment/per day. This data flow/processing/analysis etc...., requires adapted IT solutions and resources. We have therefore acquired and deployed our storage/computing solution for processing in a "buffer server" directly connected to the microscope, while guaranteeing a link to the Institute Curie's data center.
+        </p>
+        
       </div>
     </section>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
