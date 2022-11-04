@@ -124,7 +124,7 @@ video{
     background-color: black;
     
 }
-/*-------*/
+/*----I.Index---*/
 #name{
     color: white;
     text-transform: uppercase;
@@ -200,7 +200,7 @@ video{
        background-color: transparent;
     }
 }
-/*--------------about me---------------*/
+/*--------------II.About me---------------*/
 .container-aboutMe{
     width: 100%;
 }
@@ -242,7 +242,7 @@ video{
 figure >img{
     height: 250px;
 }
-/*------------------work-----------------------*/
+/*------------------III.Work-----------------------*/
 #work{   
   
     padding: 60px 0px;
@@ -273,7 +273,7 @@ a>p{
     color: white;
     margin: 20px 100px;
 }
-/*---------------------Publications---------------------------*/
+/*---------------------IV.Publications----------------------*/
 
 #publication{
     width: 100%;      
@@ -309,7 +309,7 @@ ol{
     justify-content: space-around;
 
 }
-/*--------------Career---------------------*/
+/*--------------V.Career---------------------*/
 
 #imgCareer{
     background-image: url(imgs/various.png);
@@ -324,8 +324,10 @@ ol{
     color: white;
        
 }
-/*-----------------Optics------------------*/
-
+/*-----------------VI.Optics------------------*/
+.optic{
+    padding-top: 90px;
+}
 .subtitle-year{
     margin:none;
 }
@@ -447,7 +449,7 @@ figcaption{
     background-color: rgb(204, 195, 181);
 }
 
-/*------------Fablab-----------------*/
+/*------------VIIFablab-----------------*/
 .fablab{
     width: 90%;
     padding-top: 90px;
@@ -470,7 +472,7 @@ figcaption{
 .fablabArticle >p{
     margin-bottom: 40px;
 }
-/*---tuto---*/
+/*---------VIII.Tuto---*/
 .mySlides {
     display:none
 }
@@ -500,6 +502,7 @@ figcaption{
     color: white;
     text-align: center;
 }
+/*------------IX.Analyse image-------------*/
 .imageAnalyse{
     border-radius: 20px;
     width: 100%;
@@ -513,6 +516,11 @@ figcaption{
     color: rgb(13, 98, 13);
     margin-bottom: 30px;
 }
+.imageAnalyse img{
+    width: 600px;
+  
+}
+/*-----------*/
 footer{
     padding: 20px;
 }
@@ -575,7 +583,9 @@ footer{
     .imgLuli{
         height: 200px;
     }
-
+    .imageAnalyse img{
+        width: 100%;
+    }
     /*----fablab------*/
     
 
